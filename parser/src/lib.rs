@@ -7,9 +7,9 @@ extern crate lalrpop_util;
 
 lalrpop_mod!(pub lang);
 
-mod errors;
-mod include_logic;
-mod parser_logic;
+pub mod errors;
+pub mod include_logic;
+pub mod parser_logic;
 use include_logic::{FileStack, IncludesGraph};
 use program_structure::error_code::ReportCode;
 use program_structure::error_definition::{Report, ReportCollection};
